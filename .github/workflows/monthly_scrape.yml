@@ -1,0 +1,101 @@
+name: Monthly Anime Scraper
+
+on:
+  # 每月 28-31 日 UTC 16:00（北京时间 00:00）触发
+  # Python 脚本内部会判断是否是当月最后一天，否则退出
+  schedule:
+    - cron: '0 16 28-31 * *'
+
+  # 手动触发，可指定月份强制执行
+  workflow_dispatch:
+    inputs:
+      force_month:
+        description: '强制指定月份 (1-12)，留空则取当前月'
+        required: false
+        default: ''
+      force_year:
+        description: '强制指定年份，留空则取当前年'
+        required: false
+        default: ''
+
+permissions:
+  contents: write   # 允许 push docs/ 目录到仓库
+
+jobs:
+  scrape-and-notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      # ── 1. 检出代码 ───────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── 2. 判断是否月末（定时触发时才检查，手动触发直接跳过）──
+      - name: Check last day of month
+        id: daycheck
+        run: |
+          python3 -c "
+          import datetime, calendar
+          today = datetime.date.today()
+          last = calendar.monthrange(today.year, today.month)[1]
+          is_last = (today.day == last)
+          print(f'Today={today}  LastDay={last}  IsLast={is_last}')
+          with open('is_last.txt', 'w') as f:
+              f.write('true' if is_last else 'false')
+          "
+          echo "is_last=$(cat is_last.txt)" >> $GITHUB_OUTPUT
+
+      # ── 3. Python 环境 ────────────────────────────────────────
+      - name: Set up Python
+        if: >
+          steps.daycheck.outputs.is_last == 'true' ||
+          github.event_name == 'workflow_dispatch'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # ── 4. 安装依赖 ───────────────────────────────────────────
+      - name: Install dependencies
+        if: >
+          steps.daycheck.outputs.is_last == 'true' ||
+          github.event_name == 'workflow_dispatch'
+        run: pip install -r requirements.txt
+
+      # ── 5. 爬取新番数据 ──────────────────────────────────────
+      - name: Run scraper
+        if: >
+          steps.daycheck.outputs.is_last == 'true' ||
+          github.event_name == 'workflow_dispatch'
+        env:
+          GITHUB_ACTIONS: 'true'
+          FORCE_MONTH: ${{ github.event.inputs.force_month }}
+          FORCE_YEAR:  ${{ github.event.inputs.force_year }}
+        run: python3 scraper.py
+
+      # ── 6. 发送邮件月报 ──────────────────────────────────────
+      - name: Send email report
+        if: >
+          steps.daycheck.outputs.is_last == 'true' ||
+          github.event_name == 'workflow_dispatch'
+        env:
+          SMTP_HOST: smtp.qq.com
+          SMTP_PORT: '587'
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          TO_EMAIL:  ${{ secrets.TO_EMAIL }}
+        run: python3 send_email.py
+
+      # ── 7. 提交并推送 docs/ ──────────────────────────────────
+      - name: Commit and push data
+        if: >
+          steps.daycheck.outputs.is_last == 'true' ||
+          github.event_name == 'workflow_dispatch'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/
+          git diff --staged --quiet && echo "No changes to commit" || \
+            git commit -m "chore(data): update anime $(date +%Y-%m) [skip ci]"
+          git push

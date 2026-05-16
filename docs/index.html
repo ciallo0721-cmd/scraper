@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新番数据库</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --accent: #58a6ff;
+      --tag-bg: #1f2937;
+      --tag-text: #93c5fd;
+      --score-hi: #3fb950;
+      --score-mid: #d29922;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      min-height: 100vh;
+    }
+
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 32px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header h1 { font-size: 20px; color: var(--accent); }
+    header .meta { font-size: 13px; color: var(--muted); margin-left: auto; }
+
+    .toolbar {
+      padding: 16px 32px;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .toolbar input {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 14px;
+      width: 260px;
+      outline: none;
+    }
+    .toolbar input:focus { border-color: var(--accent); }
+    .toolbar select {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 14px;
+      outline: none;
+      cursor: pointer;
+    }
+    .btn-json {
+      margin-left: auto;
+      text-decoration: none;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--accent);
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 13px;
+      transition: border-color .2s;
+    }
+    .btn-json:hover { border-color: var(--accent); }
+
+    .count { font-size: 13px; color: var(--muted); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 16px;
+      padding: 0 32px 40px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      transition: border-color .2s, transform .2s;
+    }
+    .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+
+    .card-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .card-title-en {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 12px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .card-row {
+      display: flex;
+      gap: 6px;
+      align-items: flex-start;
+      margin-bottom: 8px;
+      font-size: 13px;
+    }
+    .card-row .label {
+      color: var(--muted);
+      white-space: nowrap;
+      width: 52px;
+      flex-shrink: 0;
+    }
+    .card-row .val { color: var(--text); flex: 1; }
+
+    .tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 10px; }
+    .tag {
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      padding: 2px 8px;
+      border-radius: 20px;
+      font-size: 11px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+    .badge-hi  { background: #0d2116; color: var(--score-hi); }
+    .badge-mid { background: #1f1a00; color: var(--score-mid); }
+    .badge-lo  { background: #1c1010; color: #f85149; }
+
+    .loading {
+      text-align: center;
+      padding: 80px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+    .error { color: #f85149; }
+
+    @media (max-width: 640px) {
+      header, .toolbar, .grid { padding-left: 16px; padding-right: 16px; }
+      .toolbar .btn-json { margin-left: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <span style="font-size:24px">📺</span>
+  <div>
+    <h1 id="season-title">加载中…</h1>
+    <div class="meta" id="meta-info"></div>
+  </div>
+</header>
+
+<div class="toolbar">
+  <input type="text" id="search" placeholder="搜索名称 / 标签 / 制作公司…" oninput="render()">
+  <select id="sort-by" onchange="render()">
+    <option value="default">默认排序（热度）</option>
+    <option value="score">按评分排序</option>
+    <option value="name">按名称排序</option>
+  </select>
+  <span class="count" id="count"></span>
+  <a class="btn-json" href="data.json" target="_blank">⬇ 获取 JSON</a>
+</div>
+
+<div id="grid" class="grid">
+  <div class="loading">⏳ 正在加载新番数据…</div>
+</div>
+
+<script>
+let ALL_ANIME = [];
+
+function scoreBadge(score) {
+  if (!score) return '';
+  const cls = score >= 75 ? 'badge-hi' : score >= 60 ? 'badge-mid' : 'badge-lo';
+  return `<span class="badge ${cls}">${score}分</span>`;
+}
+
+function makeCard(a) {
+  const tags = a.tag ? a.tag.split('、').map(t => `<span class="tag">${t}</span>`).join('') : '';
+  const ep   = a.episodes ? `${a.episodes}集` : '集数未定';
+  const sd   = a.start_date && a.start_date !== '未知' ? a.start_date : '';
+  return `
+  <div class="card">
+    <div class="card-title">${a.name || '未知'}</div>
+    <div class="card-title-en">${a.name_en || ''}</div>
+    <div class="card-row">
+      <span class="label">📅 播出</span>
+      <span class="val">${a.date} ${sd ? '· ' + sd : ''}</span>
+    </div>
+    <div class="card-row">
+      <span class="label">🎭 角色</span>
+      <span class="val">${a.character || '暂无'}</span>
+    </div>
+    <div class="card-row">
+      <span class="label">🏢 制作</span>
+      <span class="val">${a.author || '未知'}</span>
+    </div>
+    <div class="card-row">
+      <span class="label">📊 集数</span>
+      <span class="val">${ep} &nbsp; ${scoreBadge(a.score)}</span>
+    </div>
+    <div class="tags">${tags}</div>
+  </div>`;
+}
+
+function render() {
+  const q    = document.getElementById('search').value.trim().toLowerCase();
+  const sort = document.getElementById('sort-by').value;
+
+  let list = ALL_ANIME.filter(a => {
+    if (!q) return true;
+    return [a.name, a.name_en, a.tag, a.author, a.character]
+      .some(v => v && v.toLowerCase().includes(q));
+  });
+
+  if (sort === 'score') {
+    list = list.slice().sort((a, b) => (b.score || 0) - (a.score || 0));
+  } else if (sort === 'name') {
+    list = list.slice().sort((a, b) => (a.name || '').localeCompare(b.name || ''));
+  }
+
+  document.getElementById('count').textContent = `显示 ${list.length} / ${ALL_ANIME.length} 部`;
+  document.getElementById('grid').innerHTML = list.length
+    ? list.map(makeCard).join('')
+    : '<div class="loading error">😶 没有匹配的结果</div>';
+}
+
+async function init() {
+  try {
+    const res  = await fetch('data.json?v=' + Date.now());
+    if (!res.ok) throw new Error(res.status);
+    const data = await res.json();
+
+    ALL_ANIME = data.anime || [];
+    document.getElementById('season-title').textContent = data.season || '新番数据库';
+    document.getElementById('meta-info').textContent =
+      `共 ${data.total} 部 · 更新于 ${data.generated_at || '—'}`;
+
+    render();
+  } catch (e) {
+    document.getElementById('grid').innerHTML =
+      `<div class="loading error">❌ 加载失败：${e.message}<br>请确认 data.json 已由 GitHub Actions 生成</div>`;
+  }
+}
+
+init();
+</script>
+</body>
+</html>

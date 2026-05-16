@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.pyo
+summary.txt
+is_last.txt
+.env
