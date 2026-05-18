@@ -18,6 +18,7 @@
       --tag-text: #93c5fd;
       --score-hi: #3fb950;
       --score-mid: #d29922;
+      --score-lo: #f85149;
     }
 
     body {
@@ -84,6 +85,20 @@
 
     .count { font-size: 13px; color: var(--muted); }
 
+    .section-title {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 24px 32px 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--border);
+    }
+    .section-title .badge-count {
+      font-size: 14px;
+      font-weight: normal;
+      color: var(--muted);
+      margin-left: 10px;
+    }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
@@ -147,7 +162,7 @@
     }
     .badge-hi  { background: #0d2116; color: var(--score-hi); }
     .badge-mid { background: #1f1a00; color: var(--score-mid); }
-    .badge-lo  { background: #1c1010; color: #f85149; }
+    .badge-lo  { background: #1c1010; color: var(--score-lo); }
 
     .loading {
       text-align: center;
@@ -157,8 +172,30 @@
     }
     .error { color: #f85149; }
 
+    /* 音乐控制按钮 */
+    .music-btn {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 40px;
+      padding: 8px 16px;
+      font-size: 14px;
+      color: var(--text);
+      cursor: pointer;
+      z-index: 1000;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      transition: all 0.2s;
+    }
+    .music-btn:hover {
+      border-color: var(--accent);
+      transform: scale(1.02);
+    }
+
     @media (max-width: 640px) {
-      header, .toolbar, .grid { padding-left: 16px; padding-right: 16px; }
+      header, .toolbar, .grid, .section-title { padding-left: 16px; padding-right: 16px; }
       .toolbar .btn-json { margin-left: 0; }
     }
   </style>
@@ -184,15 +221,34 @@
   <a class="btn-json" href="data.json" target="_blank">⬇ 获取 JSON</a>
 </div>
 
-<div id="grid" class="grid">
+<!-- 主区域（正常评分） -->
+<div class="section-title" id="normal-title">
+  📺 新番列表
+  <span class="badge-count" id="normal-count"></span>
+</div>
+<div id="normal-grid" class="grid">
   <div class="loading">⏳ 正在加载新番数据…</div>
 </div>
 
+<!-- 低分专区（评分 < 60） -->
+<div class="section-title" id="low-title">
+  ⚠️ 避雷专区 (评分低于60)
+  <span class="badge-count" id="low-count"></span>
+</div>
+<div id="low-grid" class="grid">
+  <!-- 动态填充 -->
+</div>
+
+<!-- 音乐控制按钮 -->
+<div id="music-btn" class="music-btn">🎵 播放背景音乐</div>
+
 <script>
 let ALL_ANIME = [];
+let audio = null;
+let musicPlaying = false;
 
 function scoreBadge(score) {
-  if (!score) return '';
+  if (!score && score !== 0) return '';
   const cls = score >= 75 ? 'badge-hi' : score >= 60 ? 'badge-mid' : 'badge-lo';
   return `<span class="badge ${cls}">${score}分</span>`;
 }
@@ -241,10 +297,55 @@ function render() {
     list = list.slice().sort((a, b) => (a.name || '').localeCompare(b.name || ''));
   }
 
+  // 分割：低分（score < 60） 与 正常
+  const lowList = list.filter(a => a.score !== null && a.score < 60);
+  const normalList = list.filter(a => !(a.score !== null && a.score < 60));
+
+  // 更新计数显示
+  document.getElementById('normal-count').textContent = `共 ${normalList.length} 部`;
+  document.getElementById('low-count').textContent = `共 ${lowList.length} 部`;
   document.getElementById('count').textContent = `显示 ${list.length} / ${ALL_ANIME.length} 部`;
-  document.getElementById('grid').innerHTML = list.length
-    ? list.map(makeCard).join('')
-    : '<div class="loading error">😶 没有匹配的结果</div>';
+
+  // 渲染正常区
+  const normalGrid = document.getElementById('normal-grid');
+  if (normalList.length === 0) {
+    normalGrid.innerHTML = '<div class="loading error">😶 没有匹配的结果</div>';
+  } else {
+    normalGrid.innerHTML = normalList.map(makeCard).join('');
+  }
+
+  // 渲染低分区
+  const lowGrid = document.getElementById('low-grid');
+  if (lowList.length === 0) {
+    lowGrid.innerHTML = '<div class="loading">✨ 当前没有低于60分的作品</div>';
+  } else {
+    lowGrid.innerHTML = lowList.map(makeCard).join('');
+  }
+}
+
+// 背景音乐控制
+function initMusic() {
+  const btn = document.getElementById('music-btn');
+  btn.addEventListener('click', () => {
+    if (!audio) {
+      audio = new Audio('./1.mp3');
+      audio.loop = true;
+    }
+    if (musicPlaying) {
+      audio.pause();
+      musicPlaying = false;
+      btn.innerHTML = '🎵 播放背景音乐';
+    } else {
+      audio.play().then(() => {
+        musicPlaying = true;
+        btn.innerHTML = '🔊 暂停背景音乐';
+      }).catch(e => {
+        console.warn('自动播放被阻止，请手动点击页面任意位置', e);
+        // 降级：提示用户再点一次（实际上已经点击了按钮，但仍可能被某些策略阻止）
+        alert('浏览器限制了自动播放，请再次点击按钮尝试');
+      });
+    }
+  });
 }
 
 async function init() {
@@ -259,9 +360,11 @@ async function init() {
       `共 ${data.total} 部 · 更新于 ${data.generated_at || '—'}`;
 
     render();
+    initMusic();
   } catch (e) {
-    document.getElementById('grid').innerHTML =
+    document.getElementById('normal-grid').innerHTML =
       `<div class="loading error">❌ 加载失败：${e.message}<br>请确认 data.json 已由 GitHub Actions 生成</div>`;
+    document.getElementById('low-grid').innerHTML = '';
   }
 }
 
