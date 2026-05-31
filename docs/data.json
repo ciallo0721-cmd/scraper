@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-05-16",
+  "generated_at": "2026-05-31",
   "season": "2026年5月 春番",
   "season_en": "SPRING 2026",
-  "total": 91,
+  "total": 98,
   "anime": [
     {
       "name": "とんがり帽子のアトリエ",
       "name_en": "Witch Hat Atelier",
       "date": "2026年5月 春番",
       "start_date": "2026-04-06",
-      "tag": "Adventure、Drama、Fantasy、Magic、Witch、Drawing、Primarily Female Cast、Female Protagonist",
+      "tag": "Adventure、Drama、Fantasy、Magic、Witch、Female Protagonist、Drawing、Coming of Age",
       "character": "ココ、キーフリー、フデムシ、アライラ、アガット・アークロム、タータ",
       "author": "BUG FILMS",
       "episodes": 13,
@@ -45,7 +45,7 @@
       "name_en": "That Time I Got Reincarnated as a Slime Season 4",
       "date": "2026年5月 春番",
       "start_date": "2026-04-03",
-      "tag": "Action、Adventure、Comedy、Fantasy、Kingdom Management、Isekai、Spearplay、Swordplay",
+      "tag": "Action、Adventure、Comedy、Fantasy、Kingdom Management、Isekai、Magic、Ensemble Cast",
       "character": "リムル・テンペスト、ディアブロ、クロベエ、ベスター、ハクロウ、リグル",
       "author": "8-bit",
       "episodes": null,
@@ -57,7 +57,7 @@
       "name_en": "Classroom of the Elite 4th Season: Second Year, First Semester",
       "date": "2026年5月 春番",
       "start_date": "2026-04-01",
-      "tag": "Drama、Psychological、Boarding School、Survival、Fugitive、Battle Royale、Anti-Hero",
+      "tag": "Drama、Psychological、Boarding School、Survival、Fugitive、Battle Royale、Male Protagonist",
       "character": "綾小路清隆、堀北鈴音、一之瀬帆波、椎名ひより、佐藤麻耶、三宅明人",
       "author": "Lerche",
       "episodes": 16,
@@ -69,7 +69,7 @@
       "name_en": "Wistoria: Wand and Sword Season 2",
       "date": "2026年5月 春番",
       "start_date": "2026-04-12",
-      "tag": "Action、Adventure、Drama、Fantasy、Magic、Swordplay、Male Protagonist、Primarily Teen Cast",
+      "tag": "Action、Adventure、Drama、Fantasy、Magic、Swordplay、Male Protagonist、Shounen",
       "character": "ウィル・セルフォルト、アイリス・X・ステラマリス、エルノール・リヨス・アールヴ、マイク・マイウス、エマ・クレバー、コレット・ロワール",
       "author": "Actas、Bandai Namco Pictures",
       "episodes": 12,
@@ -81,32 +81,20 @@
       "name_en": "The Angel Next Door Spoils Me Rotten2",
       "date": "2026年5月 春番",
       "start_date": "2026-04-03",
-      "tag": "Romance、Slice of Life、Heterosexual、Male Protagonist、Iyashikei、Female Protagonist、Kuudere",
+      "tag": "Romance、Slice of Life、Heterosexual、Male Protagonist、Iyashikei、Female Protagonist、Primarily Teen Cast",
       "character": "椎名真昼、藤宮周、白河千歳、赤澤樹、木戸彩香、藤宮修斗",
       "author": "project No.9",
       "episodes": 12,
       "status": "RELEASING",
-      "score": 78
-    },
-    {
-      "name": "Dr.STONE SCIENCE FUTURE 3クール",
-      "name_en": "Dr. STONE SCIENCE FUTURE Cour 3",
-      "date": "2026年5月 春番",
-      "start_date": "2026-04-02",
-      "tag": "Action、Adventure、Comedy、Sci-Fi、Post-Apocalyptic、Male Protagonist、Shounen、Space",
-      "character": "石神千空、西園寺羽京、カセキ、ブロディ・ダドリー、サガラ、コハク",
-      "author": "TMS Entertainment",
-      "episodes": 13,
-      "status": "RELEASING",
-      "score": 82
+      "score": 77
     },
     {
       "name": "クラスで２番目に可愛い女の子と友だちになった",
       "name_en": "I Made Friends with the Second Prettiest Girl in My Class",
       "date": "2026年5月 春番",
       "start_date": "2026-04-07",
-      "tag": "Comedy、Romance、School、Male Protagonist、Seinen、Female Protagonist、Primarily Teen Cast",
-      "character": "前原真樹、朝凪海、新田新奈、天海夕、八木沢美紀、朝凪空",
+      "tag": "Comedy、Romance、Seinen、Male Protagonist、School、Primarily Teen Cast、Heterosexual",
+      "character": "前原真樹、朝凪海、前原樹、湊京香、新田新奈、天海夕",
       "author": "CONNECT",
       "episodes": 12,
       "status": "RELEASING",
@@ -120,9 +108,21 @@
       "tag": "Action、Comedy、Drama、Romance、Assassins、Marriage、Urban、Crime",
       "character": "下呂ヒカル、城崎メイ、花巻トシキ、下呂アカリ、姫川杏子、嬉野シオリ",
       "author": "bones film",
-      "episodes": null,
+      "episodes": 13,
       "status": "RELEASING",
       "score": 75
+    },
+    {
+      "name": "Dr.STONE SCIENCE FUTURE 3クール",
+      "name_en": "Dr. STONE SCIENCE FUTURE Cour 3",
+      "date": "2026年5月 春番",
+      "start_date": "2026-04-02",
+      "tag": "Action、Adventure、Comedy、Sci-Fi、Post-Apocalyptic、Male Protagonist、Shounen、Space",
+      "character": "石神千空、西園寺羽京、カセキ、ブロディ・ダドリー、サガラ、コハク",
+      "author": "TMS Entertainment",
+      "episodes": 13,
+      "status": "RELEASING",
+      "score": 82
     },
     {
       "name": "オタクに優しいギャルはいない!?",
@@ -141,12 +141,12 @@
       "name_en": "The Ramparts of Ice",
       "date": "2026年5月 春番",
       "start_date": "2026-04-02",
-      "tag": "Comedy、Romance、Slice of Life、Heterosexual、Ensemble Cast、Primarily Teen Cast、Female Protagonist、School",
+      "tag": "Comedy、Romance、Slice of Life、Heterosexual、Female Protagonist、Ensemble Cast、Primarily Teen Cast、Kuudere",
       "character": "安曇美姫、雨宮湊、氷川小雪、日野陽太、栗木桃香、湊の彼女",
       "author": "Studio KAI",
       "episodes": null,
       "status": "RELEASING",
-      "score": 77
+      "score": 78
     },
     {
       "name": "姫騎士は蛮族の嫁",
@@ -165,7 +165,7 @@
       "name_en": "Farming Life in Another World 2",
       "date": "2026年5月 春番",
       "start_date": "2026-04-06",
-      "tag": "Fantasy、Slice of Life、Agriculture、Isekai、Male Protagonist、Kingdom Management、Female Harem",
+      "tag": "Fantasy、Slice of Life、Agriculture、Isekai、Male Protagonist、Kingdom Management、Angels",
       "character": "ルー、街尾火楽、ティア、ランダン、グラッツ＝ブリトア、クラカッセ",
       "author": "Zero-G",
       "episodes": 12,
@@ -173,35 +173,11 @@
       "score": 74
     },
     {
-      "name": "ドロヘドロ Season 2",
-      "name_en": "Dorohedoro Season 2",
-      "date": "2026年5月 春番",
-      "start_date": "2026-04-01",
-      "tag": "Action、Adventure、Comedy、Fantasy、Horror、Mystery、Dystopian、Urban Fantasy",
-      "character": "カイマン、ニカイドウ、栗鼠、心、能井、カスカベ",
-      "author": "MAPPA",
-      "episodes": 11,
-      "status": "RELEASING",
-      "score": 81
-    },
-    {
-      "name": "最強の王様、二度目の人生は 何をする? 第2期",
-      "name_en": "The Beginning After the End Season 2",
-      "date": "2026年5月 春番",
-      "start_date": "2026-04-01",
-      "tag": "Action、Adventure、Fantasy、Isekai、Male Protagonist、Magic",
-      "character": "アーサー・レイウィン、ルーカス・ワイクス、イライジャ・ナイト、ジャスミン・フレームスワース、サマンサ・テンペスト、ブラルド・ランドン",
-      "author": "studio A-CAT",
-      "episodes": 12,
-      "status": "RELEASING",
-      "score": 56
-    },
-    {
       "name": "日本三國",
       "name_en": "NIPPON SANGOKU: The Three Nations of the Crimson Sun",
       "date": "2026年5月 春番",
       "start_date": "2026-04-05",
-      "tag": "Action、Drama、Sci-Fi、War、Politics、Dystopian、Military、Class Struggle",
+      "tag": "Action、Drama、Sci-Fi、Politics、War、Dystopian、Seinen、Military",
       "character": "三角青輝、阿佐馬芳経、藤3世、原西伸造、夕張武茶利、閉伊弥々吉",
       "author": "Studio Kafka",
       "episodes": 12,
@@ -213,7 +189,7 @@
       "name_en": "I Want to End this Love Game",
       "date": "2026年5月 春番",
       "start_date": "2026-04-14",
-      "tag": "Comedy、Romance、Heterosexual、Female Protagonist、Male Protagonist、Tsundere、Primarily Teen Cast",
+      "tag": "Comedy、Romance、Female Protagonist、Heterosexual、Male Protagonist、Tsundere、Primarily Teen Cast",
       "character": "桜みく、浅葱優希也、萌木菜月、花葉雛子、浅葱若菜、東雲匡琉",
       "author": "Felix Film",
       "episodes": 12,
@@ -221,12 +197,36 @@
       "score": 72
     },
     {
+      "name": "最強の王様、二度目の人生は 何をする? 第2期",
+      "name_en": "The Beginning After the End Season 2",
+      "date": "2026年5月 春番",
+      "start_date": "2026-04-01",
+      "tag": "Action、Adventure、Fantasy、Isekai、Male Protagonist、Magic",
+      "character": "アーサー・レイウィン、ルーカス・ワイクス、イライジャ・ナイト、ジャスミン・フレームスワース、サマンサ・テンペスト、ブラルド・ランドン",
+      "author": "studio A-CAT",
+      "episodes": 12,
+      "status": "RELEASING",
+      "score": 57
+    },
+    {
+      "name": "ドロヘドロ Season 2",
+      "name_en": "Dorohedoro Season 2",
+      "date": "2026年5月 春番",
+      "start_date": "2026-04-01",
+      "tag": "Action、Adventure、Comedy、Fantasy、Horror、Mystery、Dystopian、Revenge",
+      "character": "カイマン、栗鼠、ニカイドウ、心、能井、ジョンソン",
+      "author": "MAPPA",
+      "episodes": 11,
+      "status": "FINISHED",
+      "score": 83
+    },
+    {
       "name": "カナン様はあくまでチョロい",
       "name_en": "Mistress Kanan is Devilishly Easy",
       "date": "2026年5月 春番",
       "start_date": "2026-04-05",
-      "tag": "Comedy、Ecchi、Fantasy、Romance、Demons、Tsundere、Heterosexual、Large Breasts",
-      "character": "カナン・ぜべる、供犠羊司、ベルゼブブ、冷然涼子、ジャンヌ、魯李川ゆい",
+      "tag": "Comedy、Ecchi、Fantasy、Romance、Demons、Heterosexual、Tsundere、Large Breasts",
+      "character": "カナン・ぜべる、供犠羊司、ベルゼブブ、冷然涼子、ジャンヌ、大富豪院裵理華",
       "author": "Studio KAI",
       "episodes": 12,
       "status": "RELEASING",
@@ -249,7 +249,7 @@
       "name_en": "LIAR GAME",
       "date": "2026年5月 春番",
       "start_date": "2026-04-07",
-      "tag": "Drama、Psychological、Gambling、Death Game、Female Protagonist、Seinen、Male Protagonist",
+      "tag": "Drama、Psychological、Gambling、Female Protagonist、Seinen、Male Protagonist、Death Game",
       "character": "神崎直、秋山真一、サトウテツゾウ、ミウラタカヨシ、タムラマキコ、マツバラフミオ",
       "author": "MADHOUSE",
       "episodes": null,
@@ -257,35 +257,35 @@
       "score": 60
     },
     {
+      "name": "あかね噺",
+      "name_en": "Akane-banashi",
+      "date": "2026年5月 春番",
+      "start_date": "2026-04-04",
+      "tag": "Drama、Rakugo、Female Protagonist、Coming of Age、Acting、Shounen",
+      "character": "桜咲朱音、阿良川まいける、樫尾公久、円、練磨家からし、阿良川こぐま",
+      "author": "ZEXCS",
+      "episodes": 12,
+      "status": "RELEASING",
+      "score": 76
+    },
+    {
       "name": "NEEDY GIRL OVERDOSE",
       "name_en": "NEEDY GIRL OVERDOSE",
       "date": "2026年5月 春番",
       "start_date": "2026-04-05",
       "tag": "Adventure、Drama、Psychological、Slice of Life、Female Protagonist、Philosophy、Otaku Culture、Idol",
-      "character": "あめちゃん、ロリポップ母、禰智禍さま、やばい女、美血華の母、獄薔薇美血華",
+      "character": "あめちゃん、ロリポップ母、禰智禍の父、禰智禍さま、やばい女、美血華の母",
       "author": "Yostar Pictures",
       "episodes": 13,
       "status": "RELEASING",
       "score": 68
     },
     {
-      "name": "あかね噺",
-      "name_en": "Akane-banashi",
-      "date": "2026年5月 春番",
-      "start_date": "2026-04-04",
-      "tag": "Drama、Rakugo、Female Protagonist、Coming of Age、Acting、Shounen",
-      "character": "桜咲朱音、阿良川まいける、樫尾公久、練磨家からし、阿良川こぐま、尾崎ママ",
-      "author": "ZEXCS",
-      "episodes": null,
-      "status": "RELEASING",
-      "score": 76
-    },
-    {
       "name": "僕のヒーローアカデミア No. 170+1 「More」",
       "name_en": "My Hero Academia More",
       "date": "2026年5月 春番",
       "start_date": "2026-05-02",
-      "tag": "Action、Adventure、Shounen、Superhero、Male Protagonist、Urban Fantasy、Female Protagonist",
+      "tag": "Action、Adventure、Shounen、Superhero、Male Protagonist、Female Protagonist、Primarily Adult Cast",
       "character": "緑谷出久、麗日お茶子、葉隠透、渡我被身子、波動ねじれ、飯田天哉",
       "author": "bones film",
       "episodes": 1,
@@ -302,7 +302,7 @@
       "author": "Bandai Namco Pictures",
       "episodes": 24,
       "status": "RELEASING",
-      "score": 78
+      "score": 80
     },
     {
       "name": "本好きの下剋上 領主の養女",
@@ -314,31 +314,7 @@
       "author": "WIT STUDIO",
       "episodes": null,
       "status": "RELEASING",
-      "score": 76
-    },
-    {
-      "name": "リィンカーネーションの花弁",
-      "name_en": "Petals of Reincarnation",
-      "date": "2026年5月 春番",
-      "start_date": "2026-04-03",
-      "tag": "Action、Supernatural、Reincarnation、Super Power、Male Protagonist、Shounen、Cosplay",
-      "character": "灰都＝ルオ＝ブフェット、ジョン・V・ノイマン、扇寺東耶、F・ナイチンゲール、ハンス・U・ルーデル、アドルフ・ヒトラー",
-      "author": "BENTEN Film",
-      "episodes": 13,
-      "status": "RELEASING",
-      "score": 60
-    },
-    {
-      "name": "最強の職業は勇者でも賢者でもなく鑑定士（仮）らしいですよ？",
-      "name_en": "The strongest job is apparently not a hero or a sage, but an appraiser (provisional)!",
-      "date": "2026年5月 春番",
-      "start_date": "2026-04-01",
-      "tag": "Action、Adventure、Comedy、Fantasy、Slapstick、Isekai、Magic",
-      "character": "真名部響生、エマリア・ステインバルト、サポちゃん、魔神、クロード、イヴェル",
-      "author": "Studio Flad",
-      "episodes": 12,
-      "status": "RELEASING",
-      "score": 58
+      "score": 77
     },
     {
       "name": "キルアオ",
@@ -350,19 +326,31 @@
       "author": "CUE",
       "episodes": 12,
       "status": "RELEASING",
-      "score": 73
+      "score": 74
     },
     {
-      "name": "上伊那ぼたん、酔へる姿は百合の花",
-      "name_en": "Botan Kamiina Fully Blossoms When Drunk",
+      "name": "最強の職業は勇者でも賢者でもなく鑑定士（仮）らしいですよ？",
+      "name_en": "The strongest job is apparently not a hero or a sage, but an appraiser (provisional)!",
       "date": "2026年5月 春番",
-      "start_date": "2026-04-11",
-      "tag": "Comedy、Romance、Slice of Life、Female Protagonist、Primarily Female Cast、Yuri、Cute Girls Doing Cute Things、Primarily Adult Cast",
-      "character": "砺波いぶき、上伊那ぼたん、遊佐あかね、北杜やえか、郡上かなで、張景嵐",
-      "author": "Soigne",
+      "start_date": "2026-04-01",
+      "tag": "Action、Adventure、Comedy、Fantasy、Slapstick、Isekai、Magic、Animals",
+      "character": "真名部響生、エマリア・ステインバルト、サポちゃん、魔神、クロード、イヴェル",
+      "author": "Studio Flad",
       "episodes": 12,
       "status": "RELEASING",
-      "score": 77
+      "score": 58
+    },
+    {
+      "name": "リィンカーネーションの花弁",
+      "name_en": "Petals of Reincarnation",
+      "date": "2026年5月 春番",
+      "start_date": "2026-04-03",
+      "tag": "Action、Supernatural、Reincarnation、Super Power、Male Protagonist、Shounen、Historical",
+      "character": "灰都＝ルオ＝ブフェット、ジョン・V・ノイマン、扇寺東耶、F・ナイチンゲール、ハンス・U・ルーデル、アドルフ・ヒトラー",
+      "author": "BENTEN Film",
+      "episodes": 13,
+      "status": "RELEASING",
+      "score": 60
     },
     {
       "name": "ポンコツ風紀委員とスカート丈が不適切なJKの話",
@@ -370,35 +358,59 @@
       "date": "2026年5月 春番",
       "start_date": "2026-04-06",
       "tag": "Comedy、Romance、Slice of Life、Slapstick、Tsundere、School、Heterosexual、Female Protagonist",
-      "character": "桜大門統悟、小日向微笑、秋名素子、月島聖一、出淵遊、田崎類",
+      "character": "桜大門統悟、小日向微笑、小日向夢、秋名素子、小日向頼武、月島聖一",
       "author": "Zero-G",
       "episodes": 12,
       "status": "RELEASING",
-      "score": 73
+      "score": 74
+    },
+    {
+      "name": "上伊那ぼたん、酔へる姿は百合の花",
+      "name_en": "Botan Kamiina Fully Blossoms When Drunk",
+      "date": "2026年5月 春番",
+      "start_date": "2026-04-11",
+      "tag": "Comedy、Romance、Slice of Life、Female Protagonist、Primarily Female Cast、Yuri、Cute Girls Doing Cute Things、Iyashikei",
+      "character": "砺波いぶき、上伊那ぼたん、遊佐あかね、北杜やえか、郡上かなで、張景嵐",
+      "author": "Soigne",
+      "episodes": 12,
+      "status": "RELEASING",
+      "score": 78
     },
     {
       "name": "ガンバレ！中村くん！！",
       "name_en": "Go For It, Nakamura-kun!!",
       "date": "2026年5月 春番",
       "start_date": "2026-04-02",
-      "tag": "Comedy、Romance、Slice of Life、Boys' Love、Unrequited Love、LGBTQ+ Themes、School、Parody",
+      "tag": "Comedy、Romance、Slice of Life、Boys' Love、LGBTQ+ Themes、Unrequited Love、School、Parody",
       "character": "中村男久斗、広瀬愛貴、奥田マサコ、成田先生、宅、松村高青",
       "author": "Drive",
       "episodes": 13,
       "status": "RELEASING",
-      "score": 76
+      "score": 77
     },
     {
       "name": "自称悪役令嬢な婚約者の観察記録。",
       "name_en": "An Observation Log of My Fiancée Who Calls Herself a Villainess",
       "date": "2026年5月 春番",
       "start_date": "2026-04-03",
-      "tag": "Comedy、Fantasy、Romance、Slice of Life、Heterosexual、Villainess、Royal Affairs、Male Protagonist",
-      "character": "セシル・グロー・アルファスタ、バーティア・イビル・ノーチェス、バルド・ノーキンス、クールガン・デレス・マーダン、ヒロー二ア・インデロン、クロ",
+      "tag": "Comedy、Fantasy、Romance、Slice of Life、Heterosexual、Villainess、Male Protagonist、Royal Affairs",
+      "character": "セシル・グロー・アルファスタ、バーティア・イビル・ノーチェス、バルド・ノーキンス、ファンニル・ロード、クールガン・デレス・マーダン、イーリン・シルベルツ",
       "author": "Ashi Productions",
       "episodes": 12,
       "status": "RELEASING",
-      "score": 72
+      "score": 73
+    },
+    {
+      "name": "夜桜さんちの大作戦 第2期",
+      "name_en": "Mission: Yozakura Family Season 2",
+      "date": "2026年5月 春番",
+      "start_date": "2026-04-12",
+      "tag": "Action、Comedy、Romance、Shounen、Espionage、Ensemble Cast、Family Life、Male Protagonist",
+      "character": "朝野太陽、夜桜六美、夜桜七悪、夜桜つぼみ、道端草助、切崎殺香",
+      "author": "SILVER LINK.",
+      "episodes": null,
+      "status": "RELEASING",
+      "score": 75
     },
     {
       "name": "ニワトリ・ファイター",
@@ -408,21 +420,9 @@
       "tag": "Action、Adventure、Comedy、Supernatural、Male Protagonist、Urban、Parody、Animals",
       "character": "けいじ、エリザベス、ピヨ子、Morio、ケイスケ、ナレーター",
       "author": "SANZIGEN",
-      "episodes": null,
+      "episodes": 12,
       "status": "RELEASING",
       "score": 64
-    },
-    {
-      "name": "夜桜さんちの大作戦 第2期",
-      "name_en": "Mission: Yozakura Family Season 2",
-      "date": "2026年5月 春番",
-      "start_date": "2026-04-12",
-      "tag": "Action、Comedy、Romance、Shounen、Espionage、Ensemble Cast、Family Life、Male Protagonist",
-      "character": "朝野太陽、夜桜六美、夜桜七悪、道端草助、夜桜嫌五、アイ",
-      "author": "SILVER LINK.",
-      "episodes": null,
-      "status": "RELEASING",
-      "score": 74
     },
     {
       "name": "よわよわ先生",
@@ -441,24 +441,12 @@
       "name_en": "Haibara's Teenage New Game+",
       "date": "2026年5月 春番",
       "start_date": "2026-04-03",
-      "tag": "Romance、Slice of Life、Age Regression、Heterosexual、Time Manipulation、Rehabilitation、Male Protagonist",
+      "tag": "Romance、Slice of Life、Age Regression、Time Manipulation、Heterosexual、Rehabilitation、School",
       "character": "灰原夏希、星宮陽花里、本宮美織、佐倉詩、七瀬唯乃、凪浦竜也",
       "author": "Studio Comet",
       "episodes": 12,
       "status": "RELEASING",
       "score": 64
-    },
-    {
-      "name": "彼女、お借りします 第5期",
-      "name_en": "Rent-a-Girlfriend Season 5",
-      "date": "2026年5月 春番",
-      "start_date": "2026-04-08",
-      "tag": "Comedy、Romance、Fake Relationship、Heterosexual、Male Protagonist、Love Triangle、Primarily Adult Cast",
-      "character": "一ノ瀬ちづる、木ノ下和也、七海麻美、八重森みに、桜沢墨、更科瑠夏",
-      "author": "TMS Entertainment",
-      "episodes": 12,
-      "status": "RELEASING",
-      "score": 57
     },
     {
       "name": "悲劇の元凶となる最強外道ラスボス女王は民の為に尽くします。Season2",
@@ -477,7 +465,7 @@
       "name_en": "The Classroom of the Black Cat and a Witch",
       "date": "2026年5月 春番",
       "start_date": "2026-04-12",
-      "tag": "Fantasy、Female Protagonist、Magic、Animals、Witch、Curses",
+      "tag": "Fantasy、Magic、Female Protagonist、Animals、Witch、Teacher",
       "character": "スピカ・ヴァルゴ、クロード・シリアス、ハナ・サソリジョウ、ユゥ・アリース、アリア・アクエリアス、キロン・サジタリアス・アラディア",
       "author": "LIDENFILMS",
       "episodes": null,
@@ -485,16 +473,16 @@
       "score": 63
     },
     {
-      "name": "劇場版 魔法科高校の劣等生 四葉継承編",
-      "name_en": "Mahouka Koukou no Rettousei: Yotsuba Keishou-hen",
+      "name": "彼女、お借りします 第5期",
+      "name_en": "Rent-a-Girlfriend Season 5",
       "date": "2026年5月 春番",
-      "start_date": "2026-05-08",
-      "tag": "Action、Romance、Sci-Fi、Supernatural、Magic",
-      "character": "司波深雪、司波達也、四葉真夜、黒羽文弥、黒羽亜夜子、津久葉夕歌",
-      "author": "8-bit",
-      "episodes": 1,
-      "status": "FINISHED",
-      "score": 70
+      "start_date": "2026-04-08",
+      "tag": "Comedy、Romance、Fake Relationship、Heterosexual、Male Protagonist、Prostitution、Primarily Adult Cast",
+      "character": "一ノ瀬ちづる、木ノ下和也、七海麻美、八重森みに、桜沢墨、更科瑠夏",
+      "author": "TMS Entertainment",
+      "episodes": 12,
+      "status": "RELEASING",
+      "score": 57
     },
     {
       "name": "逃がした魚は大きかったが釣りあげた魚が大きすぎた件",
@@ -509,6 +497,18 @@
       "score": 70
     },
     {
+      "name": "劇場版 魔法科高校の劣等生 四葉継承編",
+      "name_en": "Mahouka Koukou no Rettousei: Yotsuba Keishou-hen",
+      "date": "2026年5月 春番",
+      "start_date": "2026-05-08",
+      "tag": "Action、Romance、Sci-Fi、Supernatural、Magic",
+      "character": "司波深雪、司波達也、四葉真夜、黒羽文弥、黒羽亜夜子、津久葉夕歌",
+      "author": "8-bit",
+      "episodes": 1,
+      "status": "FINISHED",
+      "score": 69
+    },
+    {
       "name": "MAO",
       "name_en": "MAO",
       "date": "2026年5月 春番",
@@ -519,6 +519,18 @@
       "episodes": 26,
       "status": "RELEASING",
       "score": 66
+    },
+    {
+      "name": "女神「異世界転生何になりたいですか」 俺「勇者の肋骨で」",
+      "name_en": "My Ribdiculous Reincarnation",
+      "date": "2026年5月 春番",
+      "start_date": "2026-04-08",
+      "tag": "Comedy、Fantasy、Mixed Media、Surreal Comedy、Isekai、Afterlife、Parody",
+      "character": "俺、女神、紅鮭師匠、田中さん、創造神、ジヨーク",
+      "author": "Qzil.la、S.o.K",
+      "episodes": 12,
+      "status": "RELEASING",
+      "score": 64
     },
     {
       "name": "また殺されてしまったのですね、探偵様",
@@ -533,24 +545,12 @@
       "score": 58
     },
     {
-      "name": "女神「異世界転生何になりたいですか」 俺「勇者の肋骨で」",
-      "name_en": "My Ribdiculous Reincarnation",
-      "date": "2026年5月 春番",
-      "start_date": "2026-04-08",
-      "tag": "Comedy、Fantasy、Mixed Media、Surreal Comedy、Isekai、Afterlife、Parody",
-      "character": "俺、女神、紅鮭師匠、田中さん、創造神、ジヨーク",
-      "author": "Qzil.la、S.o.K",
-      "episodes": 12,
-      "status": "RELEASING",
-      "score": 63
-    },
-    {
       "name": "神の庭付き楠木邸",
       "name_en": "Kusunoki's Garden of Gods",
       "date": "2026年5月 春番",
       "start_date": "2026-04-05",
-      "tag": "Comedy、Fantasy、Slice of Life、Iyashikei、Youkai、Gods、Rural、Exorcism",
-      "character": "楠木湊、山神、霊亀、応龍、トリカ、麒麟",
+      "tag": "Comedy、Fantasy、Slice of Life、Iyashikei、Gods、Youkai、Exorcism、Rural",
+      "character": "楠木湊、山神、霊亀、安庄、ツムギ、蘭丸",
       "author": "JUVENAGE",
       "episodes": 12,
       "status": "RELEASING",
@@ -562,7 +562,7 @@
       "date": "2026年5月 春番",
       "start_date": "2026-04-07",
       "tag": "Drama、Romance、Supernatural、Female Protagonist、Heterosexual、Clone、School",
-      "character": "愛川素直、ナオ、真田秋也、森すずみ、広中律子、吉井春華",
+      "character": "愛川素直、アキ、ナオ、真田秋也、森すずみ、広中律子",
       "author": "Voil",
       "episodes": 13,
       "status": "RELEASING",
@@ -585,12 +585,12 @@
       "name_en": "Marika's Love Meter Malfunction",
       "date": "2026年5月 春番",
       "start_date": "2026-04-06",
-      "tag": "Comedy、Drama、Ecchi、Romance、Supernatural、Heterosexual、Female Harem、Male Protagonist",
+      "tag": "Comedy、Drama、Ecchi、Romance、Supernatural、Heterosexual、Male Protagonist、Female Harem",
       "character": "千歳茉莉花、彼方、三笠心菜、日高新乃、豊富紗雪",
       "author": "studio LEO",
       "episodes": 8,
       "status": "RELEASING",
-      "score": 49
+      "score": 48
     },
     {
       "name": "淡島百景",
@@ -602,14 +602,14 @@
       "author": "MADHOUSE",
       "episodes": 12,
       "status": "RELEASING",
-      "score": 68
+      "score": 67
     },
     {
       "name": "スノウボールアース",
       "name_en": "SNOWBALL EARTH",
       "date": "2026年5月 春番",
       "start_date": "2026-04-03",
-      "tag": "Action、Mecha、Sci-Fi、Full CGI、Post-Apocalyptic、Robots、Male Protagonist、Kaiju",
+      "tag": "Action、Mecha、Sci-Fi、Full CGI、Post-Apocalyptic、Robots、Kaiju、Male Protagonist",
       "character": "ユキオ、流鏑馬鉄男、甲乙一、相模逸石、瀧村矧音、赤城莉子",
       "author": "Studio KAI",
       "episodes": 13,
@@ -645,12 +645,24 @@
       "name_en": "Pardon the Intrusion, I'm Home!",
       "date": "2026年5月 春番",
       "start_date": "2026-04-08",
-      "tag": "Comedy、Romance、Heterosexual、Love Triangle、Male Harem、Otaku Culture、Shoujo",
+      "tag": "Comedy、Romance、Love Triangle、Heterosexual、Male Harem、Otaku Culture、Shoujo",
       "character": "仲間凛子、佐槻鏡斗、右沙田春真、小木紫苑、右沙田真央、高峯葉月",
       "author": "Tatsunoko Production",
       "episodes": null,
       "status": "RELEASING",
-      "score": 61
+      "score": 62
+    },
+    {
+      "name": "インゴクダンチ",
+      "name_en": "Ingoku Danchi:Deviant's Apartment Complex",
+      "date": "2026年5月 春番",
+      "start_date": "2026-04-06",
+      "tag": "Ecchi、Nudity、Henshin、Large Breasts、Femdom、MILF",
+      "character": "ヨシダ、シキジョウ、ミズタニ、カンザキ、キリタニ、カタギリ",
+      "author": "Elias",
+      "episodes": 12,
+      "status": "RELEASING",
+      "score": 49
     },
     {
       "name": "霧尾ファンクラブ",
@@ -662,7 +674,7 @@
       "author": "Satelight",
       "episodes": 12,
       "status": "RELEASING",
-      "score": 59
+      "score": 60
     },
     {
       "name": "左ききのエレン",
@@ -677,18 +689,6 @@
       "score": 55
     },
     {
-      "name": "ダイヤのA actII -Second Season-",
-      "name_en": "Ace of the Diamond act II -Second Season-",
-      "date": "2026年5月 春番",
-      "start_date": "2026-04-05",
-      "tag": "Sports、Baseball、Shounen、Male Protagonist、Primarily Male Cast、School Club",
-      "character": "小湊春市、沢村栄純、降谷暁、御幸一也、真田俊平、成宮鳴",
-      "author": "OLM",
-      "episodes": null,
-      "status": "RELEASING",
-      "score": 76
-    },
-    {
       "name": "一畳間まんきつ暮らし！",
       "name_en": "Ichijyoma Mankitsu Gurashi!",
       "date": "2026年5月 春番",
@@ -698,19 +698,19 @@
       "author": "PRA",
       "episodes": 11,
       "status": "RELEASING",
-      "score": 60
+      "score": 61
     },
     {
-      "name": "インゴクダンチ",
-      "name_en": "Ingoku Danchi:Deviant's Apartment Complex",
+      "name": "ダイヤのA actII -Second Season-",
+      "name_en": "Ace of the Diamond act II -Second Season-",
       "date": "2026年5月 春番",
-      "start_date": "2026-04-06",
-      "tag": "Ecchi、Nudity、Henshin、Large Breasts、Femdom、MILF",
-      "character": "ヨシダ、シキジョウ、ミズタニ、カンザキ、キリタニ、カタギリ",
-      "author": "Elias",
-      "episodes": 12,
+      "start_date": "2026-04-05",
+      "tag": "Sports、Baseball、Shounen、Male Protagonist、Primarily Male Cast、School Club",
+      "character": "小湊春市、沢村栄純、降谷暁、御幸一也、真田俊平、成宮鳴",
+      "author": "OLM",
+      "episodes": null,
       "status": "RELEASING",
-      "score": 50
+      "score": 77
     },
     {
       "name": "だんでらいおん",
@@ -725,18 +725,6 @@
       "score": 72
     },
     {
-      "name": "最終楽章 響け！ユーフォニアム 前編",
-      "name_en": "Saishuu Gakushou Hibike! Euphonium - Zenpen",
-      "date": "2026年5月 春番",
-      "start_date": "2026-04-24",
-      "tag": "Drama、Music、Slice of Life、Band、Female Protagonist、LGBTQ+ Themes、Coming of Age、School Club",
-      "character": "黄前久美子、川島緑輝、高坂麗奈、加藤葉月、黒江真由、塚本秀一",
-      "author": "Kyoto Animation",
-      "episodes": 1,
-      "status": "FINISHED",
-      "score": 65
-    },
-    {
       "name": "魔物喰らいの冒険者 ~俺だけ魔物を喰らって強くなる~",
       "name_en": "Monster Eater",
       "date": "2026年5月 春番",
@@ -746,7 +734,19 @@
       "author": "Imagica Infos、Imageworks Studio",
       "episodes": null,
       "status": "RELEASING",
-      "score": 38
+      "score": 40
+    },
+    {
+      "name": "最終楽章 響け！ユーフォニアム 前編",
+      "name_en": "Saishuu Gakushou Hibike! Euphonium - Zenpen",
+      "date": "2026年5月 春番",
+      "start_date": "2026-04-24",
+      "tag": "Drama、Music、Slice of Life、Band、Female Protagonist、LGBTQ+ Themes、Coming of Age、School Club",
+      "character": "黄前久美子、川島緑輝、高坂麗奈、加藤葉月、黒江真由、塚本秀一",
+      "author": "Kyoto Animation",
+      "episodes": 1,
+      "status": "FINISHED",
+      "score": 67
     },
     {
       "name": "嫌な顔されながらおパンツ見せてもらいたいR（リターンズ）",
@@ -769,7 +769,7 @@
       "character": "薬売り、三代目御台所、天子、大友ボタン、溝呂木北斗、アサ",
       "author": "EOTA、Studio Kafka",
       "episodes": 1,
-      "status": "NOT_YET_RELEASED",
+      "status": "FINISHED",
       "score": null
     },
     {
@@ -794,7 +794,7 @@
       "author": "Studio Pierrot",
       "episodes": null,
       "status": "RELEASING",
-      "score": 63
+      "score": 64
     },
     {
       "name": "神の雫",
@@ -813,7 +813,7 @@
       "name_en": "Kujima: Why Sing, When You Can Warble?",
       "date": "2026年5月 春番",
       "start_date": "2026-04-09",
-      "tag": "Comedy、Fantasy、Slice of Life、Iyashikei、Animals、Family Life、Surreal Comedy、Shounen",
+      "tag": "Comedy、Fantasy、Slice of Life、Iyashikei、Animals、Surreal Comedy、Anthropomorphism、Family Life",
       "character": "クジマ、鴻田新、三ツ木さん、鴻田みよし、鴻田英、鴻田正臣",
       "author": "Studio Hibari",
       "episodes": 12,
@@ -854,7 +854,31 @@
       "author": "Sublimation",
       "episodes": 1,
       "status": "FINISHED",
-      "score": 70
+      "score": 72
+    },
+    {
+      "name": "機動警察パトレイバー EZY File 1",
+      "name_en": "Kidou Keisatsu Patlabor EZY File 1",
+      "date": "2026年5月 春番",
+      "start_date": "2026-05-22",
+      "tag": "Mecha、Police、Real Robot、Cyberpunk、Crime",
+      "character": "久我十和、天鳥桔平、斯波繁夫、平田紗季、間昭彦、柳井雄太",
+      "author": "J.C.STAFF",
+      "episodes": 3,
+      "status": "FINISHED",
+      "score": null
+    },
+    {
+      "name": "刃牙道 第2クール",
+      "name_en": "BAKI-DOU: The Invincible Samurai Part 2",
+      "date": "2026年5月 春番",
+      "start_date": "2026-06-18",
+      "tag": "Action、Sports、Martial Arts",
+      "character": "範馬刃牙、宮本武蔵、本部以蔵",
+      "author": "TMS Entertainment",
+      "episodes": null,
+      "status": "NOT_YET_RELEASED",
+      "score": null
     },
     {
       "name": "転生悪女の黒歴史 OVA",
@@ -869,18 +893,6 @@
       "score": 68
     },
     {
-      "name": "名探偵コナン ハイウェイの堕天使",
-      "name_en": "Meitantei Conan: Highway no Datenshi",
-      "date": "2026年5月 春番",
-      "start_date": "2026-04-10",
-      "tag": "Mystery、Detective、Police、Crime",
-      "character": "萩原千速、江戸川コナン、阿笠博士、灰原哀、松田陣平、小嶋元太",
-      "author": "TMS Entertainment",
-      "episodes": 1,
-      "status": "FINISHED",
-      "score": 56
-    },
-    {
       "name": "Re:ゼロから始める休憩時間(ブレイクタイム) 4th Season",
       "name_en": "Re:Zero kara Hajimeru Kyuukei Jikan (Break Time) 4th Season",
       "date": "2026年5月 春番",
@@ -890,7 +902,19 @@
       "author": "Studio PuYUKAI",
       "episodes": null,
       "status": "RELEASING",
-      "score": 63
+      "score": 64
+    },
+    {
+      "name": "名探偵コナン ハイウェイの堕天使",
+      "name_en": "Meitantei Conan: Highway no Datenshi",
+      "date": "2026年5月 春番",
+      "start_date": "2026-04-10",
+      "tag": "Mystery、Motorcycles、Detective、Police、Crime",
+      "character": "萩原千速、江戸川コナン、阿笠博士、灰原哀、松田陣平、小嶋元太",
+      "author": "TMS Entertainment",
+      "episodes": 1,
+      "status": "FINISHED",
+      "score": 56
     },
     {
       "name": "リラックマ ～ごゆるり夢の旅～",
@@ -902,7 +926,19 @@
       "author": "Production I.G",
       "episodes": null,
       "status": "RELEASING",
-      "score": 55
+      "score": 56
+    },
+    {
+      "name": "少年とガンダム｜機動戦士ガンダム50周年 -Road to 50- プロローグムービー",
+      "name_en": "A boy with GUNDAM | Mobile Suit Gundam 50th Anniversary - Road to 50 - Prologue Movie",
+      "date": "2026年5月 春番",
+      "start_date": "2026-05-15",
+      "tag": "Action、Mecha、Sci-Fi",
+      "character": "アムロ・レイ、シャア・アズナブル、レツ・コファン、東方不敗マスター・アジア、コウ・ウラキ、アマテ・ユズリハ",
+      "author": "Bandai Namco Filmworks",
+      "episodes": 1,
+      "status": "FINISHED",
+      "score": 78
     },
     {
       "name": "百鬼夜行抄",
@@ -929,6 +965,18 @@
       "score": null
     },
     {
+      "name": "異世界の沙汰は社畜次第 思いを馳せました",
+      "name_en": "Isekai no Sata wa Shachiku Shidai: Omoi wo Hasemashita",
+      "date": "2026年5月 春番",
+      "start_date": "2026-05-27",
+      "tag": "Adventure、Fantasy、Romance、Slice of Life",
+      "character": "アレシュ・インドラーク、近藤誠一郎",
+      "author": "Studio DEEN",
+      "episodes": 1,
+      "status": "FINISHED",
+      "score": 57
+    },
+    {
       "name": "ガールズ＆パンツァー リボンの武者 パイロット版",
       "name_en": "Girls und Panzer: Ribbon no Musha Pilot-ban",
       "date": "2026年5月 春番",
@@ -938,7 +986,7 @@
       "author": "Actas",
       "episodes": 1,
       "status": "FINISHED",
-      "score": 60
+      "score": 62
     },
     {
       "name": "こめかみっ！Girls",
@@ -953,18 +1001,6 @@
       "score": null
     },
     {
-      "name": "おねがいアイプリ",
-      "name_en": "Onegai AiPri",
-      "date": "2026年5月 春番",
-      "start_date": "2026-04-05",
-      "tag": "Music、Idol",
-      "character": "好実いのり、夢宮あおい、友坂ぐみ、勇樹おりびあ、熱海ナナ、望永エマ",
-      "author": "OLM、Dongwoo Animation",
-      "episodes": null,
-      "status": "RELEASING",
-      "score": 52
-    },
-    {
       "name": "鯨を夢む",
       "name_en": "Kujira wo Yumemu",
       "date": "2026年5月 春番",
@@ -974,7 +1010,19 @@
       "author": "未知",
       "episodes": 1,
       "status": "FINISHED",
-      "score": null
+      "score": 56
+    },
+    {
+      "name": "おねがいアイプリ",
+      "name_en": "Onegai AiPri",
+      "date": "2026年5月 春番",
+      "start_date": "2026-04-05",
+      "tag": "Music、Idol、Primarily Female Cast、Female Protagonist",
+      "character": "好実いのり、夢宮あおい、友坂ぐみ、勇樹おりびあ、熱海ナナ、望永エマ",
+      "author": "OLM、Dongwoo Animation",
+      "episodes": null,
+      "status": "RELEASING",
+      "score": 53
     },
     {
       "name": "キャンディーカリエス",
@@ -984,7 +1032,7 @@
       "tag": "Comedy、Stop Motion",
       "character": "アメ、カリエス、ミカン、ビーフ、サメ、ハロルド",
       "author": "WIT STUDIO",
-      "episodes": null,
+      "episodes": 24,
       "status": "RELEASING",
       "score": null
     },
@@ -1001,12 +1049,24 @@
       "score": null
     },
     {
+      "name": "にけにち！のんのん前哨基地",
+      "name_en": "NIKKE Outpost: Off-Duty Tales",
+      "date": "2026年5月 春番",
+      "start_date": "2026-05-22",
+      "tag": "Comedy、Sci-Fi、Slice of Life、Cute Girls Doing Cute Things、Post-Apocalyptic、Primarily Female Cast",
+      "character": "アニス、ラピ、モダニア、ネオン",
+      "author": "未知",
+      "episodes": null,
+      "status": "RELEASING",
+      "score": null
+    },
+    {
       "name": "おでかけ子ザメ シーズン2",
-      "name_en": "Odekake Kozame Season 2",
+      "name_en": "Little Shark's Day Out Season 2",
       "date": "2026年5月 春番",
       "start_date": "2026-04-12",
       "tag": "Slice of Life、Animals",
-      "character": "子ザメちゃん、あんこうちゃん、うさめちゃん、あおいちゃん、ドーベルさん、こうさくくん",
+      "character": "子ザメちゃん、あんこうちゃん、うさめちゃん、あおいちゃん、女の子、ドーベルさん",
       "author": "ENGI",
       "episodes": null,
       "status": "RELEASING",
@@ -1092,6 +1152,30 @@
       "tag": "Action、Comedy",
       "character": "クマーバ、タブリス、ネコルン、バグリン",
       "author": "Akatsuki Media Studio",
+      "episodes": null,
+      "status": "RELEASING",
+      "score": null
+    },
+    {
+      "name": "るーにー・てゅーんずごっこ",
+      "name_en": "Looney Tunes Gokko",
+      "date": "2026年5月 春番",
+      "start_date": "2026-04-30",
+      "tag": "Comedy、Primarily Animal Cast、Animals、No Dialogue、Slapstick、Anthropomorphism",
+      "character": "バッグス・バニー、ダフィー・ダック、シルベスター・キャット、トゥイーティー、タズマニアン・デビル、ローラ・バニー",
+      "author": "Fanworks、Studio Nanahoshi",
+      "episodes": null,
+      "status": "RELEASING",
+      "score": null
+    },
+    {
+      "name": "トランスフォーマー ワイルドキングW",
+      "name_en": "Transformers: Wild King W",
+      "date": "2026年5月 春番",
+      "start_date": "2026-05-20",
+      "tag": "Action、Mecha、Sci-Fi、Full CGI、Super Robot、Shapeshifting",
+      "character": "コンボイ",
+      "author": "Infinity Vision、Type ZERO",
       "episodes": null,
       "status": "RELEASING",
       "score": null
