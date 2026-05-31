@@ -33,7 +33,7 @@
       "name_en": "Daemons of the Shadow Realm",
       "date": "2026年5月 春番",
       "start_date": "2026-04-04",
-      "tag": "Action、Adventure、Comedy、Fantasy、Shounen、Male Protagonist、Youkai、Archery",
+      "tag": "Action、Adventure、Comedy、Fantasy、Shounen、Male Protagonist、Archery、Youkai",
       "character": "ユル、アサ、影森ゴンゾウ、桜沢、与謝野イワン、ダンジ",
       "author": "bones film",
       "episodes": 24,
@@ -69,7 +69,7 @@
       "name_en": "Wistoria: Wand and Sword Season 2",
       "date": "2026年5月 春番",
       "start_date": "2026-04-12",
-      "tag": "Action、Adventure、Drama、Fantasy、Magic、Swordplay、Male Protagonist、Shounen",
+      "tag": "Action、Adventure、Drama、Fantasy、Magic、Male Protagonist、Swordplay、Shounen",
       "character": "ウィル・セルフォルト、アイリス・X・ステラマリス、エルノール・リヨス・アールヴ、マイク・マイウス、エマ・クレバー、コレット・ロワール",
       "author": "Actas、Bandai Namco Pictures",
       "episodes": 12,
@@ -86,7 +86,7 @@
       "author": "project No.9",
       "episodes": 12,
       "status": "RELEASING",
-      "score": 77
+      "score": 76
     },
     {
       "name": "クラスで２番目に可愛い女の子と友だちになった",
@@ -237,7 +237,7 @@
       "name_en": "Agents of the Four Seasons: Dance of Spring",
       "date": "2026年5月 春番",
       "start_date": "2026-03-29",
-      "tag": "Drama、Fantasy、Romance、Urban Fantasy、Environmental、Mythology、Age Gap、Ensemble Cast",
+      "tag": "Drama、Fantasy、Romance、Urban Fantasy、Environmental、Mythology、Shoujo、Age Gap",
       "character": "姫鷹さくら、花葉雛菊、雪柳紅梅、美上、薺、藤堂",
       "author": "WIT STUDIO",
       "episodes": 14,
@@ -278,19 +278,7 @@
       "author": "Yostar Pictures",
       "episodes": 13,
       "status": "RELEASING",
-      "score": 68
-    },
-    {
-      "name": "僕のヒーローアカデミア No. 170+1 「More」",
-      "name_en": "My Hero Academia More",
-      "date": "2026年5月 春番",
-      "start_date": "2026-05-02",
-      "tag": "Action、Adventure、Shounen、Superhero、Male Protagonist、Female Protagonist、Primarily Adult Cast",
-      "character": "緑谷出久、麗日お茶子、葉隠透、渡我被身子、波動ねじれ、飯田天哉",
-      "author": "bones film",
-      "episodes": 1,
-      "status": "FINISHED",
-      "score": 82
+      "score": 67
     },
     {
       "name": "魔入りました！入間くん 第4シリーズ",
@@ -303,6 +291,18 @@
       "episodes": 24,
       "status": "RELEASING",
       "score": 80
+    },
+    {
+      "name": "僕のヒーローアカデミア No. 170+1 「More」",
+      "name_en": "My Hero Academia More",
+      "date": "2026年5月 春番",
+      "start_date": "2026-05-02",
+      "tag": "Action、Adventure、Shounen、Superhero、Male Protagonist、Female Protagonist、Primarily Adult Cast",
+      "character": "緑谷出久、麗日お茶子、葉隠透、渡我被身子、波動ねじれ、飯田天哉",
+      "author": "bones film",
+      "episodes": 1,
+      "status": "FINISHED",
+      "score": 82
     },
     {
       "name": "本好きの下剋上 領主の養女",
@@ -326,7 +326,7 @@
       "author": "CUE",
       "episodes": 12,
       "status": "RELEASING",
-      "score": 74
+      "score": 73
     },
     {
       "name": "最強の職業は勇者でも賢者でもなく鑑定士（仮）らしいですよ？",
@@ -369,7 +369,7 @@
       "name_en": "Botan Kamiina Fully Blossoms When Drunk",
       "date": "2026年5月 春番",
       "start_date": "2026-04-11",
-      "tag": "Comedy、Romance、Slice of Life、Female Protagonist、Primarily Female Cast、Yuri、Cute Girls Doing Cute Things、Iyashikei",
+      "tag": "Comedy、Romance、Slice of Life、Female Protagonist、Primarily Female Cast、Cute Girls Doing Cute Things、Yuri、Iyashikei",
       "character": "砺波いぶき、上伊那ぼたん、遊佐あかね、北杜やえか、郡上かなで、張景嵐",
       "author": "Soigne",
       "episodes": 12,
@@ -417,12 +417,12 @@
       "name_en": "Rooster Fighter",
       "date": "2026年5月 春番",
       "start_date": "2026-03-14",
-      "tag": "Action、Adventure、Comedy、Supernatural、Male Protagonist、Urban、Parody、Animals",
+      "tag": "Action、Adventure、Comedy、Supernatural、Male Protagonist、Animals、Urban、Urban Fantasy",
       "character": "けいじ、エリザベス、ピヨ子、Morio、ケイスケ、ナレーター",
       "author": "SANZIGEN",
       "episodes": 12,
       "status": "RELEASING",
-      "score": 64
+      "score": 65
     },
     {
       "name": "よわよわ先生",
@@ -502,11 +502,11 @@
       "date": "2026年5月 春番",
       "start_date": "2026-05-08",
       "tag": "Action、Romance、Sci-Fi、Supernatural、Magic",
-      "character": "司波深雪、司波達也、四葉真夜、黒羽文弥、黒羽亜夜子、津久葉夕歌",
+      "character": "司波深雪、司波達也、西城レオンハルト、四葉真夜、吉田幹比古、アンジェリーナ・クドウ・シールズ",
       "author": "8-bit",
       "episodes": 1,
       "status": "FINISHED",
-      "score": 69
+      "score": 70
     },
     {
       "name": "MAO",
@@ -722,7 +722,7 @@
       "author": "NAZ",
       "episodes": 7,
       "status": "FINISHED",
-      "score": 72
+      "score": 71
     },
     {
       "name": "魔物喰らいの冒険者 ~俺だけ魔物を喰らって強くなる~",
@@ -845,18 +845,6 @@
       "score": 42
     },
     {
-      "name": "ラブライブ！蓮ノ空女学院スクールアイドルクラブ Bloom Garden Party",
-      "name_en": "Love Live! Hasunosora Jogakuin School Idol Club: Bloom Garden Party",
-      "date": "2026年5月 春番",
-      "start_date": "2026-05-08",
-      "tag": "Music、Slice of Life、Idol、Full CGI、Primarily Female Cast、Female Protagonist、Dancing",
-      "character": "日野下 花帆、桂城泉、乙宗梢、大沢瑠璃乃、村野さやか、徒町小鈴",
-      "author": "Sublimation",
-      "episodes": 1,
-      "status": "FINISHED",
-      "score": 72
-    },
-    {
       "name": "機動警察パトレイバー EZY File 1",
       "name_en": "Kidou Keisatsu Patlabor EZY File 1",
       "date": "2026年5月 春番",
@@ -869,6 +857,18 @@
       "score": null
     },
     {
+      "name": "ラブライブ！蓮ノ空女学院スクールアイドルクラブ Bloom Garden Party",
+      "name_en": "Love Live! Hasunosora Jogakuin School Idol Club: Bloom Garden Party",
+      "date": "2026年5月 春番",
+      "start_date": "2026-05-08",
+      "tag": "Music、Slice of Life、Idol、Full CGI、Primarily Female Cast、Female Protagonist、Dancing",
+      "character": "日野下 花帆、桂城泉、乙宗梢、大沢瑠璃乃、村野さやか、徒町小鈴",
+      "author": "Sublimation",
+      "episodes": 1,
+      "status": "FINISHED",
+      "score": 72
+    },
+    {
       "name": "刃牙道 第2クール",
       "name_en": "BAKI-DOU: The Invincible Samurai Part 2",
       "date": "2026年5月 春番",
@@ -876,7 +876,7 @@
       "tag": "Action、Sports、Martial Arts",
       "character": "範馬刃牙、宮本武蔵、本部以蔵",
       "author": "TMS Entertainment",
-      "episodes": null,
+      "episodes": 12,
       "status": "NOT_YET_RELEASED",
       "score": null
     },
@@ -938,7 +938,7 @@
       "author": "Bandai Namco Filmworks",
       "episodes": 1,
       "status": "FINISHED",
-      "score": 78
+      "score": 79
     },
     {
       "name": "百鬼夜行抄",
@@ -974,7 +974,7 @@
       "author": "Studio DEEN",
       "episodes": 1,
       "status": "FINISHED",
-      "score": 57
+      "score": 58
     },
     {
       "name": "ガールズ＆パンツァー リボンの武者 パイロット版",
@@ -1066,7 +1066,7 @@
       "date": "2026年5月 春番",
       "start_date": "2026-04-12",
       "tag": "Slice of Life、Animals",
-      "character": "子ザメちゃん、あんこうちゃん、うさめちゃん、あおいちゃん、女の子、ドーベルさん",
+      "character": "子ザメちゃん、あんこうちゃん、たまも・ヨーコ、うさめちゃん、でゅらんだる、おにび",
       "author": "ENGI",
       "episodes": null,
       "status": "RELEASING",
