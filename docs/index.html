@@ -348,29 +348,7 @@ function render() {
 }
 
 // 背景音乐控制
-function initMusic() {
-  const btn = document.getElementById('music-btn');
-  btn.addEventListener('click', () => {
-    if (!audio) {
-      audio = new Audio('./1.mp3');
-      audio.loop = true;
-    }
-    if (musicPlaying) {
-      audio.pause();
-      musicPlaying = false;
-      btn.innerHTML = '🎵 播放背景音乐';
-    } else {
-      audio.play().then(() => {
-        musicPlaying = true;
-        btn.innerHTML = '🔊 暂停背景音乐';
-      }).catch(e => {
-        console.warn('自动播放被阻止，请手动点击页面任意位置', e);
-        // 降级：提示用户再点一次（实际上已经点击了按钮，但仍可能被某些策略阻止）
-        alert('浏览器限制了自动播放，请再次点击按钮尝试');
-      });
-    }
-  });
-}
+
 
 async function init() {
   try {
