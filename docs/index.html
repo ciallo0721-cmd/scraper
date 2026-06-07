@@ -240,7 +240,31 @@
 </div>
 
 <!-- 音乐控制按钮 -->
-<div id="music-btn" class="music-btn">🎵 播放背景音乐</div>
+<audio id="bg-music" src="./1.mp3" autoplay loop preload="auto"></audio>
+
+
+
+
+
+
+<script>
+    (function() {
+        var audio = document.getElementById('bg-music');
+        audio.volume = 0.5;
+        
+        audio.play().catch(function() {
+            var playOnInteraction = function() {
+                audio.play();
+                document.removeEventListener('click', playOnInteraction);
+                document.removeEventListener('touchstart', playOnInteraction);
+            };
+            document.addEventListener('click', playOnInteraction);
+            document.addEventListener('touchstart', playOnInteraction);
+        });
+    })();
+</script>
+
+
 
 <script>
 let ALL_ANIME = [];
