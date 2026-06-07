@@ -347,7 +347,6 @@ function render() {
   }
 }
 
-// 背景音乐控制
 
 
 async function init() {
@@ -362,7 +361,7 @@ async function init() {
       `共 ${data.total} 部 · 更新于 ${data.generated_at || '—'}`;
 
     render();
-    initMusic();
+
   } catch (e) {
     document.getElementById('normal-grid').innerHTML =
       `<div class="loading error">❌ 加载失败：${e.message}<br>请确认 data.json 已由 GitHub Actions 生成</div>`;
