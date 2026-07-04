@@ -164,6 +164,22 @@
     .badge-mid { background: #1f1a00; color: var(--score-mid); }
     .badge-lo  { background: #1c1010; color: var(--score-lo); }
 
+    /* 播出状态徽章 */
+    .status-badge {
+      display: inline-block;
+      padding: 1px 7px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 600;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+    .status-airing   { background: #0d2818; color: #3fb950; }
+    .status-finished { background: #1c1010; color: #f85149; }
+    .status-upcoming { background: #0d1e33; color: #58a6ff; }
+    .status-cancelled{ background: #1c1018; color: #c586c0; }
+    .status-hiatus   { background: #1f1a00; color: #d29922; }
+
     .loading {
       text-align: center;
       padding: 80px;
@@ -216,6 +232,12 @@
     <option value="default">默认排序（热度）</option>
     <option value="score">按评分排序</option>
     <option value="name">按名称排序</option>
+  </select>
+  <select id="time-filter" onchange="render()">
+    <option value="all">📅 全部时间</option>
+    <option value="airing">🟢 播出中</option>
+    <option value="finished">🔴 已完结</option>
+    <option value="upcoming">🔵 未开播</option>
   </select>
   <span class="count" id="count"></span>
   <a class="btn-json" href="data.json" target="_blank">⬇ 获取 JSON</a>
@@ -271,6 +293,46 @@ let ALL_ANIME = [];
 let audio = null;
 let musicPlaying = false;
 
+// ── 时间判断：根据 status + start_date + episodes 推断播出状态 ──
+const STATUS_MAP = {
+  'RELEASING':       { label: '播出中', cls: 'status-airing' },
+  'FINISHED':        { label: '已完结', cls: 'status-finished' },
+  'NOT_YET_RELEASED':{ label: '未开播', cls: 'status-upcoming' },
+  'CANCELLED':       { label: '已取消', cls: 'status-cancelled' },
+  'HIATUS':          { label: '停更中', cls: 'status-hiatus' },
+};
+
+function getAnimeStatus(a) {
+  // 优先信任 AniList 的 status 字段
+  const st = a.status;
+  if (st && STATUS_MAP[st]) {
+    return { ...STATUS_MAP[st], key: st };
+  }
+
+  // 回退：根据日期 + 集数推算
+  const today = new Date();
+  if (a.start_date && a.start_date !== '未知') {
+    const sd = new Date(a.start_date + 'T00:00:00');
+    if (sd > today) {
+      return { label: '未开播', cls: 'status-upcoming', key: 'upcoming_calc' };
+    }
+    const eps = a.episodes || 12; // 未知集数默认12集
+    const endDate = new Date(sd.getTime() + (eps - 1) * 7 * 86400000);
+    if (endDate < today) {
+      return { label: '已完结', cls: 'status-finished', key: 'finished_calc' };
+    }
+    return { label: '播出中', cls: 'status-airing', key: 'airing_calc' };
+  }
+
+  return null;
+}
+
+function statusBadge(a) {
+  const s = getAnimeStatus(a);
+  if (!s) return '';
+  return `<span class="status-badge ${s.cls}">${s.label}</span>`;
+}
+
 function scoreBadge(score) {
   if (!score && score !== 0) return '';
   const cls = score >= 75 ? 'badge-hi' : score >= 60 ? 'badge-mid' : 'badge-lo';
@@ -281,9 +343,10 @@ function makeCard(a) {
   const tags = a.tag ? a.tag.split('、').map(t => `<span class="tag">${t}</span>`).join('') : '';
   const ep   = a.episodes ? `${a.episodes}集` : '集数未定';
   const sd   = a.start_date && a.start_date !== '未知' ? a.start_date : '';
+  const sb   = statusBadge(a);
   return `
   <div class="card">
-    <div class="card-title">${a.name || '未知'}</div>
+    <div class="card-title">${a.name || '未知'} ${sb}</div>
     <div class="card-title-en">${a.name_en || ''}</div>
     <div class="card-row">
       <span class="label">📅 播出</span>
@@ -308,12 +371,25 @@ function makeCard(a) {
 function render() {
   const q    = document.getElementById('search').value.trim().toLowerCase();
   const sort = document.getElementById('sort-by').value;
+  const timeF = document.getElementById('time-filter').value;
 
   let list = ALL_ANIME.filter(a => {
     if (!q) return true;
     return [a.name, a.name_en, a.tag, a.author, a.character]
       .some(v => v && v.toLowerCase().includes(q));
   });
+
+  // ── 时间筛选 ──
+  if (timeF !== 'all') {
+    list = list.filter(a => {
+      const s = getAnimeStatus(a);
+      if (!s) return false;
+      if (timeF === 'airing')   return s.key === 'RELEASING' || s.key === 'airing_calc';
+      if (timeF === 'finished') return s.key === 'FINISHED' || s.key === 'finished_calc';
+      if (timeF === 'upcoming') return s.key === 'NOT_YET_RELEASED' || s.key === 'upcoming_calc';
+      return true;
+    });
+  }
 
   if (sort === 'score') {
     list = list.slice().sort((a, b) => (b.score || 0) - (a.score || 0));
